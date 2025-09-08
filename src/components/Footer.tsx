@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,16 +10,7 @@ export default function Footer() {
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex justify-center md:justify-start space-x-6">
             <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white"
-              aria-label="GitHub"
-            >
-              <FaGithub className="h-6 w-6" />
-            </a>
-            <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/amine-akhssas-15a122383/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
@@ -28,18 +19,18 @@ export default function Footer() {
               <FaLinkedin className="h-6 w-6" />
             </a>
             <a
-              href="https://twitter.com/yourusername"
+              href="https://github.com/Amine-Akhssas"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-blue-400 dark:text-gray-400 dark:hover:text-blue-400"
-              aria-label="Twitter"
+              className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              aria-label="GitHub"
             >
-              <FaTwitter className="h-6 w-6" />
+              <FaGithub className="h-6 w-6" />
             </a>
           </div>
           <div className="mt-8 md:mt-0 text-center md:text-right">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              &copy; {currentYear} Your Name. All rights reserved.
+              &copy; {currentYear} Amine Akhssas. All rights reserved.
             </p>
             <div className="mt-2 flex justify-center md:justify-end space-x-4">
               <Link

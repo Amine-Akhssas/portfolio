@@ -1,9 +1,9 @@
 export const profile = {
   name: "Amine Akhssas",
   title: "Computer Science Student | Web Developer | Tech Enthusiast",
-  email: "your.email@example.com",
+  email: "contact@amineakhssas.com", // Update with your email
   location: "City, Country",
-  about: "Passionate web developer with X years of experience in building beautiful, responsive, and user-friendly websites and applications. I love turning ideas into reality through code.",
+  about: "Computer Science student passionate about web development and creating impactful digital experiences. I specialize in building modern, responsive, and accessible web applications using the latest technologies.",
   socialLinks: [
     { name: 'GitHub', url: 'https://github.com/Amine-Akhssas' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/amine-akhssas-15a122383/' },
@@ -24,12 +24,12 @@ export const skills = [
 
 export const projects = [
   {
-    title: 'Project 1',
-    description: 'A brief description of your project and what it does.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    title: 'Social Media App',
+    description: 'A full-stack social media application with user authentication, posts, and real-time interactions.',
+    technologies: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
     githubUrl: 'https://github.com/Amine-Akhssas/socialmediaapp',
     liveUrl: '#',
-    image: '/images/project1.jpg',
+    image: '/images/placeholder.jpg',
   },
   {
     title: 'Project 2',
@@ -37,7 +37,7 @@ export const projects = [
     technologies: ['React', 'Node.js', 'MongoDB'],
     githubUrl: 'https://github.com/Amine-Akhssas/socialmediaapp',
     liveUrl: '#',
-    image: '/images/project2.jpg',
+    image: '/images/placeholder.jpg',
   },
   // Add more projects as needed
 ];

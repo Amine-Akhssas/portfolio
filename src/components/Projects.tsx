@@ -4,6 +4,17 @@ import { motion } from 'framer-motion';
 import { projects } from '@/lib/data';
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
+
+interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  githubUrl: string;
+  liveUrl: string;
+  image: string;
+}
 
 export default function Projects() {
   return (
@@ -27,7 +38,7 @@ export default function Projects() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project: Project, index: number) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -36,9 +47,20 @@ export default function Projects() {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="group bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="h-48 bg-gray-200 dark:bg-gray-700 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-4xl font-bold text-gray-400 dark:text-gray-500">
+              <div className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 h-full flex flex-col">
+                <div className="relative h-48 bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = '/images/placeholder.jpg';
+                    }}
+                  />
+                  <span className="text-4xl font-bold text-gray-400 dark:text-gray-500 absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
                     {project.title.charAt(0).toUpperCase()}
                   </span>
                 </div>
