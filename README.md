@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Professional Portfolio
 
 A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
@@ -49,3 +50,7 @@ Deploy your portfolio with [Vercel](https://vercel.com) for the best experience.
 ## License
 
 MIT
+=======
+# portfolio
+My Portfolio
+>>>>>>> 066f04e7a6e0a1893106a7d94ce0c310c2268108
